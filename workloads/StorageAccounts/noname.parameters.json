@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "storageAccountKind": {
+            "value": "StorageV2"
+        },
+        "storageAccountSku": {
+            "value": "Standard_LRS"
+        },
+        "storageAccountAccessTier": {
+            "value": "Hot"
+        },
+        "deleteRetentionPolicy": {
+            "value": true
+        },
+        "deleteRetentionPolicyDays": {
+            "value": 7
+        },
+        "automaticSnapshotPolicyEnabled": {
+            "value": false
+        },
+        "minimumTlsVersion": {
+            "value": "TLS1_2"
+        }
+    }
+}
